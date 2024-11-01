@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Projects</title>
+  <link rel="stylesheet" href="output.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- <h1 class="text-3xl font-bold underline text-primary font-anuj-font">Hello World!!!</h1> -->
+  <!-- Navbar Start -->
+  <nav class="p-3 flex bg-white justify-between items-center">
+    <a href="#" id="brand" class="flex gap-2 items-center">
+      <img src="./assets/asset 0.png" alt="Logo" class="object-cover max-w-12 max-h-12" />
+      <span class="text-lg font-medium font-display">ToDesktop</span>
+    </a>
+    <div id="nav-menu" class="hidden md:flex gap-12">
+      <a href="#" class="font-medium hover:text-primary">Pricing</a>
+      <a href="#" class="font-medium hover:text-primary">Docs</a>
+      <a href="#" class="font-medium hover:text-primary">ChangeLog</a>
+      <a href="#" class="font-medium hover:text-primary">Blogs</a>
+      <a href="#" class="font-medium hover:text-primary">Login</a>
+    </div>
+    <button class="hidden md:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+      <img src="./assets/asset 1.svg" />
+      <span>Electron Developers</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+    <button class="p-2 md:hidden" onclick="handelMenu()">
+      <i class="fa-solid fa-bars" class="text-gray-600"></i>
+    </button>
+    <div id="nav-dialog" class="fixed z-10 lg:hidden bg-white inset-0 p-3">
+      <div id="nav-bar" class="flex justify-between">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+          <img src="./assets/asset 0.png" alt="Logo" class="object-cover max-w-12 max-h-12" />
+          <span class="text-lg font-medium font-display">ToDesktop</span>
+        </a>
+        <button class="p-2 lg:hidden" onclick="handelMenu()">
+          <i class="fa-solid fa-xmark" class="text-gray-600"></i>
+        </button>
+      </div>
+      <div class="mt-6">
+        <a class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg" href="#">
+          Pricing
+        </a>
+        <a class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg" href="#">
+          Docs
+        </a>
+
+        <a class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg" href="#">
+          Changelog
+        </a>
+
+        <a class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg" href="#">
+          Blog
+        </a>
+        <a class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg" href="#">
+          Login
+        </a>
+      </div>
+
+      <div class="h-[1px] bg-gray-300"></div>
+      <button class="mt-6 w-full flex gap-2 items-center px-6 py-4 rounded-lg hover:bg-gray-50">
+        <img src="./assets/asset 1.svg" />
+        <span>Electron Developers</span>
+      </button>
+    </div>
+  </nav>
+  <!-- Navbar Ends Here -->
+
+  <!-- Hero Section Starts -->
+  <main>
+    <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
+      <div id="hero-container" class="max-w-4xl mx-auto px-6 pb-32 flex flex-col">
+        <div id="version-text" class="flex my-6 gap-2 justify-center items-center border border-yellow-300 bg-yellow-50 rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:translate-y-1 transition group">
+          <div class="w-2 h-2 bg-yellow-400 rounded-full border-yellow-600"></div>
+            <p class="font-display font-medium text-yellow-600">V0.21.1:<span class="text-yellow-800"> Find-in-page bug fixes</span></p>
+            <i class="fa-solid fa-arrow-right text-yello-600 group-hover:translate-x-1 transition"></i>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="script.js"></script>
+
+</html>
