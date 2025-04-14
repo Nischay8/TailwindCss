@@ -43,3 +43,20 @@ const line4 = document.getElementById('line4');
 setupIntersectionObserver(line1, true, 0.15);
 setupIntersectionObserver(line2, false, 0.15);
 setupIntersectionObserver(line3, true, 0.15);
+
+
+const dtElements=document.querySelectorAll('dt');
+
+dtElements.forEach(element=>{
+    element.addEventListener('click',()=>{
+        
+        const ddId=element.getAttribute('aria-controls');
+        console.log(ddId);
+        const ddElememt=document.getElementById(ddId);
+        console.log(ddElememt);
+        const ddArrowIcon=element.querySelectorAll('i')[0];
+
+        ddElememt.classList.toggle("hidden");
+        ddArrowIcon.classList.toggle('-rotate-180');
+    });
+});
