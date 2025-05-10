@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nischay Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./taillwind.config.js"></script>
+</head>
+<body class="overflow-x-hidden">
+
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <img src="./images//header-bg-color.png" alt="" class="w-full" />
+
+    </div>
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <img src="./images/logo.png" alt="Logo" class="w-28 cursor-pointer mr-14"/>
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-15">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#top">About Me</a></li>
+            <li><a href="#top">Services</a></li>
+            <li><a href="#top">My Work</a></li>
+            <li><a href="#top">Contact Me</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+            <button>
+                <img src="./images/moon_icon.png" alt="moon_icon" class="w-6" />
+            </button>
+            <a class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact
+                <img src="./images//arrow-icon.png" alt="" class="w-3"/>
+            </a>
+
+            <button class="md:hidden block ml-2.5" onclick="openMenu()">
+                <img src="./images/menu-black.png" alt="" class="w-6" />
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+         <ul class="flex md:hidden  flex-col gap-3 py-20 px-10 fixed right-0 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500" id="sideMenu">
+
+            <div class="absolute right-7 top-6" onclick="closeMenu()">
+                <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer"/>
+            </div>
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Services</li>
+            <li>My Work</li>
+            <li>Contact Me</li>
+         </ul>
+    </nav>
+
+<!-- Header Section -->
+
+<div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <img src="./images/profile-img.png" alt="" class="rounded-full w-32"/>
+    <h3 class="flex item-end gap-2 text-xl">Hi! I'm Nischay Sinha <img src="./images/hand-icon.png" alt="" class="w-6"/></h3>
+    <h1 class="text-3xl sm:text-6xl lg:text-[66px]">frontend web developer based in Jharkhand</h1>
+    <p>I am a Frontend developer from California,USA with 10 Years of Experience in multiple companies like Microsoft,Tesla and Apple.</p>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
