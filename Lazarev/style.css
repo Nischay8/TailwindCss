@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: #fff;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#page1 h1{
+    font-size: 9vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 8vw;
+}
+
+#page1 h1 svg {
+    height: 6vw;
+    width: 6vw;
+    background-color: #0BA34E;
+    border-radius: 50%;
+
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+}
+
