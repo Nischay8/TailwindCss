@@ -14,6 +14,17 @@ export default function Home() {
         <Navbar />
         <Hero />
       </Container>
+      <div className="relative w-full mt-20">
+        <div className="h-px w-full absolute index-x-0 bg-linear-to-b from-neutral-300/9 via-neutral-500 to-transparent pointer-events-none z-0"></div>
+
+        <Image
+          className="max-w-7xl mx-auto"
+          src="/banner.webp"
+          alt="banner image"
+          width={1000}
+          height={1000}
+        />
+      </div>
     </div>
   );
 }

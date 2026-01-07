@@ -17,6 +17,15 @@ export const Hero = () => {
           up in 10 mins. Back to building by 3:40pm.
         </p>
       </div>
+      <div className="flex items-center gap-4 mt-10">
+        <button className="cursor-pointer  bg-[#2579f4] px-4 py-2 rounded-lg text-white text-shadow-lg tracking-wide">
+          Start Free trail
+        </button>
+
+        <button className="cursor-pointer px-4 py-2 rounded-lg text-black  tracking-wide">
+          Pricing &rarr;
+        </button>
+      </div>
     </div>
   );
 };
